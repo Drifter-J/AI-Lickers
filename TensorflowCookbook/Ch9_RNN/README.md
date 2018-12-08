@@ -76,9 +76,9 @@
     출처 : [http://ronny.rest/blog/post_2017_08_16_tanh/](http://ronny.rest/blog/post_2017_08_16_tanh/)
 
     - Tensorflow 함수 :
-```python
+    ```python
         BasicRNNCell(num_units)
-```
+    ```
     - RNN을 학습시키는데 어려운 점 :
         - Overfitting
         - Exploding Gradients Problem
@@ -99,9 +99,9 @@
 
     - RNN위에 RNN을 쌓아올린 Model
     - Tensorflow 함수 :
-```python
+    ```python
         MultiRNNCell([rnn_cell]*num_layers)
-```
+    ```
     ## Sequence-to-Sequence
 
     - RNN cell을 길고 깊게 쌓아서 복잡하고 방대한 시퀀스 데이터를 처리하는데 특화된 모델
@@ -114,9 +114,9 @@
     - Encoding : 자연어 처리에 적용할 때 데이터를 RNN의 숫자 속성(= fixed sized vector)으로 바꾸는 과정
     - Decoding : RNN 숫자 속성을 단어나 문자로 바꿔 출력하는 과정
     - Tensorflow 함수 :
-```python
+    ```python
         basic_rnn_seq2seq(encoder_inputs, decoder_inputs, cell)
-```
+    ```
     - 적용 Applications : Machine Translation, Question Answering, ...
 
     ## Siamese Networks
